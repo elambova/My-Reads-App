@@ -198,3 +198,16 @@ button:active {
   text-align: center;
   font-size: 0.8em;
 }
+.error {
+  width: 400px;
+  margin: 10px auto;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 1px rgb(37, 2, 2);
+  background-color: rgb(233, 146, 146);
+  color: rgb(252, 0, 0);
+  border: 1px solid rgb(238, 58, 58);
+  border-radius: 10px;
+  display: none;
+}
