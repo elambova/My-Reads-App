@@ -13,6 +13,7 @@ export default class SearchBookList extends Component {
     const { books } = this.props;
     return (
       <div className="search-books-results">
+        <p className="error">Invalid search. Please try again.</p>
         <ol className="books-grid">
           {books.map((book, index) => (
             <li key={index}>
@@ -20,6 +21,7 @@ export default class SearchBookList extends Component {
                 books={book}
                 onUpdateBookShelf={(books, shelf) => {
                   this.updateBook(books, shelf);
+                  alert("Book is add to selected Shelf.");
                 }}
               />
             </li>

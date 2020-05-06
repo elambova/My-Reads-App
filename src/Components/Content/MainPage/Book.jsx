@@ -8,6 +8,10 @@ export default class Book extends Component {
 
   render() {
     const { books, onUpdateBookShelf } = this.props;
+    const coverUrl =
+      books.imageLinks === undefined
+        ? "http://books.google.com/books/content?id=1yx1tgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        : books.imageLinks.thumbnail || books.imageLinks.smallThumbnail;
     return (
       <div className="book">
         <div className="book-top">
@@ -16,9 +20,7 @@ export default class Book extends Component {
             style={{
               width: 128,
               height: 193,
-              backgroundImage: `url("${
-                books.imageLinks.thumbnail || books.imageLinks.smallThumbnail
-              }"`,
+              backgroundImage: `url("${coverUrl}"`,
             }}
           />
           <div className="book-shelf-changer">

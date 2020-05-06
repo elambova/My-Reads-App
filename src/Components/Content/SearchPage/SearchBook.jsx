@@ -14,26 +14,20 @@ export default class SearchBook extends Component {
     result: [],
   };
 
-  updateQuery = (query) => {
-    this.setState({ query: query });
-    this.searchBook(query);
-  };
-
-  searchBook = (query) => {
-    query === "" ? this.setState({ result: [] }) : this.searchResult(query);
-  };
-
   searchResult = (query) => {
-    if (query) {
+    this.setState({ query: query });
+    if (query.trim() === "") {
+      this.setState({ result: [] });
+    } else {
       BooksAPI.search(query).then((result) => {
         if (result.error) {
           this.setState({ result: [] });
+          document.querySelector(".error").style.display = "block";
         } else {
+          document.querySelector(".error").style.display = "none";
           this.setState({ result: result });
         }
       });
-    } else {
-      this.setState({ result: [] });
     }
   };
 
@@ -41,6 +35,7 @@ export default class SearchBook extends Component {
     const { query, result } = this.state;
     const { updateBookShelf } = this.props;
 
+    console.log(result);
     return (
       <div className="search-books">
         <div className="search-books-bar">
@@ -53,7 +48,7 @@ export default class SearchBook extends Component {
               placeholder="Search by title or author"
               className="search-contacts"
               value={query}
-              onChange={(event) => this.updateQuery(event.target.value)}
+              onChange={(event) => this.searchResult(event.target.value)}
             />
           </div>
         </div>
