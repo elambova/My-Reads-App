@@ -26,7 +26,7 @@ export default class Book extends Component {
           <div className="book-shelf-changer">
             <select
               onChange={(event) => onUpdateBookShelf(books, event.target.value)}
-              value={books.shelf}
+              value={books.shelf ? books.shelf : "none"}
             >
               <option value="move" disabled>
                 Move to...
