@@ -14,7 +14,6 @@ To get started developing right away:
 ## What You're Getting
 
 ```bash
-├── CONTRIBUTING.md
 ├── README.md - This file.
 ├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
 ├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
@@ -25,7 +24,21 @@ To get started developing right away:
     ├── App.css # Styles for your app. Feel free to customize this as you desire.
     ├── App.js # This is the root of your app. Contains static HTML right now.
     ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+    ├── APIConnect
+    |   ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+    ├── Components
+    |   ├── Header
+    |   |   ├── Header.jsx # In this Component is Header  jsx file on Main page. Just a title of document.
+    |   ├── Content
+    |   |   ├── MainPage
+    |   |   |   ├── Bookshelf.jsx # In this Component is Bookshelf jsx file on Main page. Contain ListBook Component.
+    |   |   |   ├── ListBook.jsx # In this Component is ListaBook jsx file on Main page. Contain Book Component.
+    |   |   |   ├── Book.jsx # In this Component is Book jsx file on Main page. Display data for every book.
+    |   |   ├── SearchPage
+    |   |   |   ├── SearchBook.jsx # In this Component is SearchBook jsx file on Search page. Contain SearchBookList Component
+    |   |   |   ├── SearchBookList.jsx # In this Component is SearchBookList jsx file on Search page. Contain Book Component.
+    |   ├── Footer
+    |   |   ├── Footer.jsx # In this Component is Footer  jsx file on Main page. Just button who navigate to /search page.
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
     │   ├── arrow-back.svg
@@ -38,7 +51,7 @@ Remember that good React design practice is to create new JS files for each comp
 
 ## Backend Server
 
-To simplify your development process, we've provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
+To simplify your development process, we've provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/APIConnest/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
 
 - [`getAll`](#getall)
 - [`update`](#update)
