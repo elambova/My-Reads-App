@@ -11,6 +11,7 @@ export default class SearchBookList extends Component {
 
   render() {
     const { books } = this.props;
+
     return (
       <div className="search-books-results">
         <p className="error">Invalid search. Please try again.</p>
@@ -21,7 +22,7 @@ export default class SearchBookList extends Component {
                 books={book}
                 onUpdateBookShelf={(books, shelf) => {
                   this.updateBook(books, shelf);
-                  alert("Book is add to selected Shelf.");
+                  alert(`Book is add to ${shelf} shelf.`);
                 }}
               />
             </li>

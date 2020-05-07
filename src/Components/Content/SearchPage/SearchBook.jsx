@@ -34,8 +34,6 @@ export default class SearchBook extends Component {
   render() {
     const { query, result } = this.state;
     const { updateBookShelf } = this.props;
-
-    console.log(result);
     return (
       <div className="search-books">
         <div className="search-books-bar">
@@ -45,7 +43,7 @@ export default class SearchBook extends Component {
           <div className="search-books-input-wrapper">
             <input
               type="text"
-              placeholder="Search by title or author"
+              placeholder="Search by category"
               className="search-contacts"
               value={query}
               onChange={(event) => this.searchResult(event.target.value)}
