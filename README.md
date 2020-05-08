@@ -45,20 +45,20 @@ and browse the books, change the shelves, search and add more books.
     ├── App.js # This is the root of your app. Contains static HTML right now.
     ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
     ├── APIConnect
-    |   ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+    │   ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
     ├── Components
-    |   ├── Header
-    |   |   ├── Header.jsx # In this Component is Header  jsx file on Main page. Just a title of document.
-    |   ├── Content
-    |   |   ├── MainPage
-    |   |   |   ├── Bookshelf.jsx # In this Component is Bookshelf jsx file on Main page. Contain ListBook Component.
-    |   |   |   ├── ListBook.jsx # In this Component is ListaBook jsx file on Main page. Contain Book Component.
-    |   |   |   ├── Book.jsx # In this Component is Book jsx file on Main page. Display data for every book.
-    |   |   ├── SearchPage
-    |   |   |   ├── SearchBook.jsx # In this Component is SearchBook jsx file on Search page. Contain SearchBookList Component
-    |   |   |   ├── SearchBookList.jsx # In this Component is SearchBookList jsx file on Search page. Contain Book Component.
-    |   ├── Footer
-    |   |   ├── Footer.jsx # In this Component is Footer  jsx file on Main page. Just button who navigate to /search page.
+    │   ├── Header
+    │   │   ├── Header.js # In this Component is Header  jsx file on Main page. Just a title of document.
+    │   ├── Content
+    │   │   ├── MainPage
+    │   │   │   ├── Bookshelf.js # In this Component is Bookshelf jsx file on Main page. Contain ListBook Component.
+    │   │   │   ├── ListBook.js # In this Component is ListaBook jsx file on Main page. Contain Book Component.
+    │   │   │   ├── Book.js # In this Component is Book jsx file on Main page. Display data for every book.
+    │   │   ├── SearchPage
+    │   │   │   ├── SearchBook.js # In this Component is SearchBook jsx file on Search page. Contain SearchBookList Component
+    │   │   │   ├── SearchBookList.js # In this Component is SearchBookList jsx file on Search page. Contain Book Component.
+    │   ├── Footer
+    │   │   ├── Footer.js # In this Component is Footer  jsx file on Main page. Just button who navigate to /search page.
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
     │   ├── arrow-back.svg
