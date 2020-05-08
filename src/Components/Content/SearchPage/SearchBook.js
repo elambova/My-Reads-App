@@ -25,6 +25,13 @@ export default class SearchBook extends Component {
           document.querySelector(".error").style.display = "block";
         } else {
           document.querySelector(".error").style.display = "none";
+          result.map((result) => {
+            this.props.books.forEach((book) => {
+              if (book.id === result.id) result.shelf = book.shelf;
+            });
+
+            return result;
+          });
           this.setState({ result: result });
         }
       });
