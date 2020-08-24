@@ -2,6 +2,8 @@
 
 This project is part of Udacity React Nanodegree Program. In it except React is used Udacity BooksAPI from which we receive the necessary information.
 
+---
+
 ## Introduction
 
 In this project are used:
@@ -13,6 +15,8 @@ In this project are used:
 - React
 
 For create is using `create-react-app` (more information can find in [Create React App](https://github.com/facebookincubator/create-react-app)).
+
+---
 
 ### Getting started
 
@@ -30,6 +34,8 @@ npm start
 ```
 
 and browse the books, change the shelves, search and add more books.
+
+---
 
 ### File structure
 
@@ -68,6 +74,8 @@ and browse the books, change the shelves, search and add more books.
 ```
 
 To be semantically correct, all components are separated in a folder, the main ones being Heather, Content and Foother. only one file is placed in the header and footer. the content folder contains 2 new folders, which are respectively for the main page and for the book search page (in each folder there are several files (components), which are to be semantically structured).
+
+---
 
 ## Backend Server
 
@@ -111,3 +119,47 @@ search(query);
 - query: `<String>`
 - Returns a Promise which resolves to a JSON object containing a collection of a maximum of 20 book objects.
 - These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
+
+---
+
+### Screenshots
+
+---
+
+<div align="center">
+
+#### Homepage
+
+![Homepage](src/images/screenshots/home.png)
+
+---
+
+#### Change Shelf
+
+![Change Shelf ](src/images/screenshots/change-shelf.png)
+
+---
+
+#### Search book
+
+![Search book](src/images/screenshots/search.png)
+
+---
+
+#### Result of Search add book to shelf
+
+![Result of Search add book to shelf](src/images/screenshots/search-add.png)
+
+---
+
+#### Book added to shelf
+
+![Book added to shelf](src/images/screenshots/search-added.png)
+
+---
+
+#### NO Result of Search
+
+![No Result of Search ](src/images/screenshots/no-results.png)
+
+</div>
